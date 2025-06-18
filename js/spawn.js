@@ -2140,8 +2140,8 @@ const spawn = {
             }
         };
     },
-    hopper(x, y, radius = 35 + Math.ceil(Math.random() * 30)) {
-        mobs.spawn(x, y, 5, radius, "rgb(0,200,180)");
+    hopper(x, y, radius = 30 + Math.ceil(Math.random() * 10)) {
+        mobs.spawn(x, y, 4, radius, "rgb(0,200,180)");
         let me = mob[mob.length - 1];
         me.tier = 1
         Matter.Body.setDensity(me, 0.0015); //normal is 0.001
