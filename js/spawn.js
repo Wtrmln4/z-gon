@@ -2146,12 +2146,12 @@ const spawn = {
         me.tier = 1
         Matter.Body.setDensity(me, 0.0015); //normal is 0.001
         me.accelMag = 0.05;
-        me.g = 0.0032; //required if using this.gravity
+        me.g = 0.05; //required if using this.gravity
         me.frictionAir = 0.01;
         me.friction = 1
         me.frictionStatic = 1
         me.restitution = 0;
-        me.delay = 120 * simulation.CDScale;
+        me.delay = 10 * simulation.CDScale;
         me.randomHopFrequency = 200 + Math.floor(Math.random() * 150);
         me.randomHopCD = simulation.cycle + me.randomHopFrequency;
         Matter.Body.rotate(me, Math.random() * Math.PI);
