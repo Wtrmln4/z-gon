@@ -2141,6 +2141,7 @@ const spawn = {
         };
     },
     hopper(x, y, radius = 30 + Math.ceil(Math.random() * 10)) {
+        radius = Math.ceil(radius * 0.7);
         mobs.spawn(x, y, 4, radius, "rgb(0,200,180)");
         let me = mob[mob.length - 1];
         me.tier = 1
@@ -2154,7 +2155,6 @@ const spawn = {
         me.delay = 10 * simulation.CDScale;
         me.randomHopFrequency = 200 + Math.floor(Math.random() * 150);
         me.randomHopCD = simulation.cycle + me.randomHopFrequency;
-        Matter.Body.rotate(me, Math.random() * Math.PI);
         spawn.shield(me, x, y);
         me.do = function () {
             if (this.seePlayer.recall) this.healthBar1()
