@@ -158,7 +158,7 @@ const spawn = {
         }
     },
     spawnChance(chance) {
-        const difficultyChance = (simulation.difficultyMode === 1) ? 1 : simulation.difficulty
+        const difficultyChance = (simulation.difficultyMode === 100) ? 1 : simulation.difficulty
         return (Math.random() < chance + 0.07 * difficultyChance) && (mob.length < -1 + 16 * Math.log10(simulation.difficulty + 1))
     },
     randomMob(x, y, chance = 1) {
