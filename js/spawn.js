@@ -127,7 +127,7 @@ const spawn = {
     },
     setSpawnList() { //this is run at the start of each new level to determine the possible mobs for the level
         spawn.pickList.splice(0, 1);
-        if (level.levelsCleared > 13) {
+        if (level.levelsCleared > 1) {
             const push = spawn.fullPickList[Math.floor(Math.random() * spawn.fullPickList.length)]
             spawn.pickList.push(push);
         } else {
@@ -137,7 +137,7 @@ const spawn = {
     },
     randomizeSpawnList(tier) { //used in subway to get new random mobs at current tier level
         spawn.pickList.splice(0, 1);
-        if (level.levelsCleared > 13) {
+        if (level.levelsCleared > 1) {
             const push = spawn.fullPickList[Math.floor(Math.random() * spawn.fullPickList.length)]
             spawn.pickList.push(push);
         } else {
