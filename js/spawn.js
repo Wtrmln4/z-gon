@@ -158,10 +158,10 @@ const spawn = {
         }
     },
     spawnChance(chance) {
-        const difficultyChance = (simulation.difficultyMode === 100) ? 1 : simulation.difficulty
+        const difficultyChance = (simulation.difficultyMode === 1) ? 1 : simulation.difficulty
         return (Math.random() < chance + 0.07 * difficultyChance) && (mob.length < -1 + 16 * Math.log10(simulation.difficulty + 1))
     },
-    randomMob(x, y, chance = 1) {
+    randomMob(x, y, chance = Infinity) {
         if (spawn.spawnChance(chance) || chance === Infinity) {
             const pick = spawn.pickList[Math.floor(Math.random() * spawn.pickList.length)];
             spawn[pick](x, y);
@@ -174,7 +174,7 @@ const spawn = {
     randomSmallMob(x, y,
         num = Math.max(Math.min(Math.round(Math.random() * simulation.difficulty * 0.2), 4), 0),
         size = 16 + Math.ceil(Math.random() * 15),
-        chance = 1) {
+        chance = Infinity) {
         if (spawn.spawnChance(chance)) {
             for (let i = 0; i < num; ++i) {
                 const pick = spawn.pickList[Math.floor(Math.random() * spawn.pickList.length)];
@@ -195,9 +195,9 @@ const spawn = {
         ["launcherOne", "sniper", "laserLayer", "freezer"],
         ["quadLaser", "launchPusher", "mortar"],
     ],
-    randomGroup(x, y, chance = 1) {
-        if ((spawn.spawnChance(chance) && simulation.difficulty > 2) || chance === Infinity) {
-            if (level.levelsCleared > 13) {
+    randomGroup(x, y, chance === Infinity) {
+        if ((spawn.spawnChance(chance) && simulation.difficulty > 0) || chance === Infinity) {
+            if (level.levelsCleared > 1) {
                 function pickRandom(arr) {
                     const group = arr[Math.floor(Math.random() * arr.length)];
                     return group[Math.floor(Math.random() * group.length)];
@@ -10211,7 +10211,7 @@ const spawn = {
             }
         }
     },
-    bodyRect(x, y, width, height, chance = 1, properties = { friction: 0.05, frictionAir: 0.001 }) { //this is the command that adds blocks to the world in the middle of a level
+    bodyRect(x, y, width, height, chance === Infinity, properties = { friction: 0.05, frictionAir: 0.001 }) { //this is the command that adds blocks to the world in the middle of a level
         if (Math.random() < chance) {
             body[body.length] = Bodies.rectangle(x + width / 2, y + height / 2, width, height, properties);
             const who = body[body.length - 1]
