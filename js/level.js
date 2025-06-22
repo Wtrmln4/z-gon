@@ -5767,7 +5767,7 @@ const level = {
         level.isProcedural = true //used in generating text for the level builder
         level.defaultZoom = 1700
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d9d9de" //"#d3d3db" //"#dcdcdf";
+        document.body.style.backgroundColor = "#181a2e" //"#d3d3db" //"#dcdcdf";
         let isDoorLeft, isDoorRight, x, y
         doCustom = []
         doCustomTopLayer = []
@@ -6851,7 +6851,7 @@ const level = {
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.defaultZoom = 1500
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
         // spawn.debris(-150, -775, 1425, 3); //16 debris per level
         // spawn.debris(1525, -25, 950, 3); //16 debris per level
         // spawn.debris(-650, -2100, 575, 2); //16 debris per level
@@ -9541,7 +9541,7 @@ const level = {
 
         level.defaultZoom = 1700
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
 
 
 
@@ -9766,7 +9766,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 15, 100, 20);
 
         powerUps.spawnStartingPowerUps(1075, -550);
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
 
         // starting room
         spawn.mapRect(-300, -1000, 600, 100);
@@ -9968,7 +9968,7 @@ const level = {
         simulation.zoomTransition(level.defaultZoom)
         powerUps.spawnStartingPowerUps(1475, -1175);
         spawn.debris(750, -2200, 3700, 16); //16 debris per level
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
 
         spawn.mapRect(-300, 0, 5100, 300); //***********ground
         spawn.mapRect(-300, -350, 50, 400); //far left starting left wall
@@ -10163,7 +10163,7 @@ const level = {
         simulation.zoomTransition(level.defaultZoom)
 
         powerUps.spawnStartingPowerUps(-2550, -700);
-        document.body.style.backgroundColor = "#dcdcde" //"#fafcff";
+        document.body.style.backgroundColor = "#181a2e" //"#fafcff";
 
         spawn.debris(-2325, -1825, 2400); //16 debris per level
         spawn.debris(-2625, -600, 600, 5); //16 debris per level
@@ -10427,7 +10427,7 @@ const level = {
         spawn.debris(-3000, -800, 3280, 6); //16 debris per level
         spawn.debris(-1400, 410, 2300, 5); //16 debris per level
         powerUps.spawnStartingPowerUps(25, 500);
-        document.body.style.backgroundColor = "#dcdcde" //"#f2f5f3";
+        document.body.style.backgroundColor = "#181a2e" //"#f2f5f3";
 
         spawn.mapRect(-1500, 0, 2750, 100);
         spawn.mapRect(175, -270, 125, 300);
@@ -12111,7 +12111,7 @@ const level = {
     },
     perplex() { //by Oranger from discord
         simulation.inGameConsole(`<strong>perplex</strong> by <span class='color-var'>Oranger</span>`);
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
         level.setPosToSpawn(-600, 400);
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.exit.x = 550;
@@ -12305,7 +12305,7 @@ const level = {
         level.customTopLayer = () => { };
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
         //Level
         level.setPosToSpawn(200, 50);
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
@@ -12475,7 +12475,7 @@ const level = {
 
         level.defaultZoom = 3000
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
 
         //Map Elements
         spawn.mapRect(-800, -600, 800, 200);
@@ -12620,7 +12620,7 @@ const level = {
         level.exit.x = 3900;
         level.exit.y = 1060;
         spawn.mapRect(level.exit.x, level.exit.y + 30, 100, 20)
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
 
         var nextBlockSpawn = simulation.cycle + Math.floor(Math.random() * 60 + 30)
         const door = level.door(475, 900, 50, 200, 201)
@@ -13056,7 +13056,7 @@ const level = {
     ngon() { //make by Oranger
         simulation.inGameConsole(`<strong>"ngon"</strong> by <span class='color-var'>Oranger</span>`);
 
-        document.body.style.backgroundColor = "#dcdcde";
+        document.body.style.backgroundColor = "#181a2e";
         let needGravity = [];
         let s = { //mech statue
             x: -200,
@@ -14102,7 +14102,7 @@ const level = {
         if (!initialSpawn) {
             level.defaultZoom = 1300 //was 800 I changed this
             simulation.zoomTransition(level.defaultZoom)
-            document.body.style.backgroundColor = "#dcdcde";
+            document.body.style.backgroundColor = "#181a2e";
             //Level
             level.setPosToSpawn(-100, -1450);
             spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
