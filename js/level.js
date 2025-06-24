@@ -9522,7 +9522,7 @@ const level = {
         };
 
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(219,219,219,1)"
             ctx.fillRect(710, -2225, 580, 225)
             ctx.fillRect(3510, -1550, 330, 300)
             ctx.fillRect(1735, -900, 1515, 1900)
