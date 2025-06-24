@@ -2813,7 +2813,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         // color.map = "#444" //custom map color
 
         level.custom = () => {
@@ -4690,7 +4690,7 @@ const level = {
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.defaultZoom = 2300
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         color.map = "#3d4240"
         powerUps.spawnStartingPowerUps(-575, -2925)
         //walls
@@ -4975,7 +4975,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 25, 100, 25);
         level.defaultZoom = 2000
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#c3d6df" //"#d8dadf";
+        document.body.style.backgroundColor = "#c3d6df" //"#181a2e";
         color.map = "#303639";
         // powerUps.spawnStartingPowerUps(1475, -1175);
         // spawn.debris(750, -2200, 3700, 16); //16 debris per level
@@ -16302,7 +16302,7 @@ const level = {
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
 
         //builds   
         spawn.mapRect(-100, 0, 1485, 100);
@@ -19508,7 +19508,7 @@ const level = {
         //        spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         // powerUps.spawnStartingPowerUps(1475, -1175);
         // spawn.debris(750, -2200, 3700, 16); //16 debris per level
 
@@ -19584,7 +19584,7 @@ const level = {
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         level.customTopLayer = () => {
             ctx.fillStyle = "rgba(0,0,0,0.3)"
             ctx.fillRect(-272, -580, 1700, 600)
@@ -21261,7 +21261,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20);
         level.defaultZoom = 1800;
         simulation.zoomTransition(level.defaultZoom);
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
 
         spawn.mapRect(-925, 0, 2650, 100);
 
@@ -22211,7 +22211,7 @@ const level = {
             trains.push(level.transport(6275, -2100 + 525 * i, 600, 50, (2 * i % 2 - 1) * 4 * Math.min(simulation.difficulty / 2, 2) * (1 + Math.random())))
             zzz.push([level.boost(6275, -2100 + 525 * i, 100), 6275]);
         }
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
 
         const portal1 = level.portal({
             x: 3984,
@@ -23466,8 +23466,8 @@ const level = {
             ctx.restore()
             ctx.save()
             ctx.beginPath()
-            ctx.fillStyle = "#d8dadf";
-            ctx.strokeStyle = "#d8dadf";
+            ctx.fillStyle = "#181a2e";
+            ctx.strokeStyle = "#181a2e";
             ctx.moveTo(-2950, -600);
             ctx.lineTo(-3730, -1725);
             ctx.lineTo(-3730, -600);
@@ -23628,7 +23628,7 @@ const level = {
         level.exit.y = -650;
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom + 800)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         spawn.mapRect(-225, -1950, 350, 75);
         spawn.mapRect(225, -1950, 50, 75);
         spawn.mapRect(-250, -2025, 50, 150);
@@ -26263,8 +26263,8 @@ const level = {
             ctx.restore()
             ctx.save()
             ctx.beginPath()
-            ctx.fillStyle = "#d8dadf";
-            ctx.strokeStyle = "#d8dadf";
+            ctx.fillStyle = "#181a2e";
+            ctx.strokeStyle = "#181a2e";
             ctx.moveTo(-2950, -600);
             ctx.lineTo(-3730, -1725);
             ctx.lineTo(-3730, -600);
@@ -26493,7 +26493,7 @@ const level = {
         level.exit.y = -1500;
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom + 800)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         spawn.mapRect(-225, -1950, 350, 75);
         spawn.mapRect(225, -1950, 50, 75);
         spawn.mapRect(-250, -2025, 50, 150);
@@ -29137,7 +29137,7 @@ const level = {
     },
     tlinat() { // _Destined_ formerly Richard0820#2652
         simulation.inGameConsole(`<strong>tlinat</strong> by <span class='color-var'>Richard0820</span>`);
-        simulation.fallHeight = 1 / 0, level.setPosToSpawn(0, -1e3), level.exit.x = 5100, level.exit.y = 3770, spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20), spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20), level.defaultZoom = 3000, simulation.zoomTransition(level.defaultZoom), document.body.style.backgroundColor = "#d8dadf";
+        simulation.fallHeight = 1 / 0, level.setPosToSpawn(0, -1e3), level.exit.x = 5100, level.exit.y = 3770, spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20), spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20), level.defaultZoom = 3000, simulation.zoomTransition(level.defaultZoom), document.body.style.backgroundColor = "#181a2e";
         let e = 0,
             t = 0;
         const boidsFlocking = function (mob, otherMobs) {
@@ -29368,7 +29368,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         // color.map = "#444" //custom map color
 
 
@@ -31301,7 +31301,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         ace.stabber(425, -100);
         ace.stabber(725, -100);
         ace.stabber(1000, -100);
@@ -32569,7 +32569,7 @@ const level = {
         spawn.mapRect(0, 0, 1, 1);
         level.defaultZoom = 1800;
         simulation.zoomTransition(level.defaultZoom);
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         const isSus = Math.random() < 0.001; //A very lucky person gets rickrolled
         const mediaSource = isSus ? "https://ia801509.us.archive.org/10/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.ogv" : "https://cdn.glitch.me/b559a783-c0cb-4369-92e3-0c0a5556ba01/n-gon%20evangelion%20-%20Made%20with%20Clipchamp%20(8).mp4?v=1692134040246"
         let videoContainer;
@@ -32862,7 +32862,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         const mover = level.mover(5700, 2680, 3800, 25, 10); //x,y,width.height,VxGoal,force
 
         //spawning debris
@@ -34076,7 +34076,7 @@ const level = {
         spawn.mapRect(level.enter.x, level.enter.y + 20, 100, 20);
         level.defaultZoom = 1500;
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
 
         spawn.mapRect(-500, 0, 3300, 300); // Floor
         spawn.mapRect(-100, -3000, 2500, 100); // Ceiling
@@ -36899,7 +36899,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800;
         simulation.zoomTransition(level.defaultZoom);
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
 
         function mkrect(x, y, w, h) {
             let who = body[body.length] = Bodies.rectangle(x, y, w, h, {
@@ -37009,7 +37009,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800;
         simulation.zoomTransition(level.defaultZoom);
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         const button = level.button(2000, 0);
         const door = level.door(3930, -300, 40, 300, 300, 10);
         door.isClosing = false;
@@ -38697,7 +38697,7 @@ const level = {
         spawn.mapRect(level.exit.x, level.exit.y + 20, 100, 20); //bump for level exit
         level.defaultZoom = 1800
         simulation.zoomTransition(level.defaultZoom)
-        document.body.style.backgroundColor = "#d8dadf";
+        document.body.style.backgroundColor = "#181a2e";
         alternate(-50, -9050, 425, 100);
         const image = new Image()
         image.src = "https://raw.githubusercontent.com/Whyisthisnotavalable/image-yy/main/Hotpot-removed.png";
