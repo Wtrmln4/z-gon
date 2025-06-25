@@ -2875,7 +2875,7 @@ const level = {
             mover.draw();
             button.query();
             button.draw();
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(-150, -650, 900, 250)
         };
         level.setPosToSpawn(0, -450); //normal spawn
@@ -3025,7 +3025,7 @@ const level = {
         }
         let phase = -Math.PI / 2
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.1)";
+            ctx.fillStyle = "rgba(0,0,0,1)";
             ctx.fillRect(-1950, -950, 3900, 1900);
             //draw center circle lines
             ctx.beginPath();
@@ -3469,7 +3469,7 @@ const level = {
         level.customTopLayer = () => {
             ctx.fillStyle = "rgba(0,255,255,0.1)"
             ctx.fillRect(6400, -550, 300, 350)
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(-175, -975, 900, 575)
         };
         level.setPosToSpawn(0, -475); //normal spawn
@@ -3544,7 +3544,7 @@ const level = {
             level.customTopLayer = () => {
                 ctx.fillStyle = "rgba(0,255,255,0.1)"
                 ctx.fillRect(-6400 - 300, -550, 300, 350)
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(175 - 900, -975, 900, 575)
             };
         }
@@ -4656,7 +4656,7 @@ const level = {
 
         level.custom = () => {
             for (let i = 0; i < train.length; i++)  train[i].trainStop()
-            ctx.fillStyle = "rgba(0,0,0,0.1)"//"#ddd"
+            ctx.fillStyle = "rgba(0,0,0,1)"//"#ddd"
             ctx.fillRect(m.pos.x - 4000, m.pos.y - 4000, 8000, 8000)
             level.exit.drawAndCheck();
             // level.enter.draw();
@@ -5110,7 +5110,7 @@ const level = {
             level.customTopLayer = () => {
                 doorIn.draw();
                 doorOut.draw();
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-225, -1100, 1000, 350);
             };
         } else {
@@ -5203,7 +5203,7 @@ const level = {
             level.customTopLayer = () => {
                 doorIn.draw();
                 doorOut.draw();
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-775, -1100, 1000, 350);
             };
         }
@@ -5218,7 +5218,7 @@ const level = {
             level.exit.x = 400 - 50;
             level.exit.y = -50 + 25;
             leftRoomColor = "#cff"
-            rightRoomColor = "rgba(0,0,0,0.13)"
+            rightRoomColor = "rgba(0,0,0,13)"
         } else {
             level.setPosToSpawn(400, -50);
             level.exit.x = 9150;
@@ -5316,7 +5316,7 @@ const level = {
             level.enter.draw();
         };
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.13)"
+            ctx.fillStyle = "rgba(0,0,0,13)"
             ctx.fillRect(8300, -1950, 1550, 1275);
             ctx.fillRect(5400, 875, 1800, 650);
             ctx.fillRect(2950, -2200, 875, 1050);
@@ -5658,7 +5658,7 @@ const level = {
             for (let i = 0; i < movers.length; i++) movers[i].push();
             level.exit.drawAndCheck();
             level.enter.draw();
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(6937, -2075, 50, 1775); //6937, -1050, 50, 675);
             ctx.fillStyle = "rgba(0,255,255,0.15)" //            ctx.fillStyle = "#f2f2f2"
             ctx.fillRect(7675, -2875, 500, 425); //exit room
@@ -5983,7 +5983,7 @@ const level = {
                     button.isReadyToFire = true
                     doCustom.push(
                         () => {
-                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,0.1)";
+                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,1)";
                             ctx.fillRect(x + 2000 - 255 - 280, y + -100, 280, 100);
                             button.query();
                             button.draw();
@@ -6017,7 +6017,7 @@ const level = {
 
                     doCustom.push(
                         () => {
-                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,0.1)";
+                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,1)";
                             ctx.fillRect(x + 255, y + -100, 280, 100);
                             button.query();
                             button.draw();
@@ -6050,7 +6050,7 @@ const level = {
                     button.isReadyToFire = true
                     doCustom.push(
                         () => {
-                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,0.1)";
+                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,1)";
                             ctx.fillRect(x + 2000 - 255 - 280, y + -100, 280, 100);
                             button.query();
                             button.draw();
@@ -6100,7 +6100,7 @@ const level = {
                     button.isReadyToFire = true
                     doCustom.push(
                         () => {
-                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,0.1)";
+                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,1)";
                             ctx.fillRect(x + 255, y + -100, 280, 100);
                             button.query();
                             button.draw();
@@ -6164,7 +6164,7 @@ const level = {
                     button.isReadyToFire = true
                     doCustom.push(
                         () => {
-                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,0.1)";
+                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,1)";
                             ctx.fillRect(x + 2000 - 200 - 325, y + -625, 325, 650);
                             button.query();
                             button.draw();
@@ -6231,7 +6231,7 @@ const level = {
                     button.isReadyToFire = true
                     doCustom.push(
                         () => {
-                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,0.1)";
+                            ctx.fillStyle = "rgba(0,0,0,0.05)"; //"rgba(0,0,0,1)";
                             ctx.fillRect(x + 200, y + -625, 325, 650);
                             button.query();
                             button.draw();
@@ -8716,7 +8716,7 @@ const level = {
             portal[3].draw();
             ctx.fillStyle = color.map //below portal
             ctx.fillRect(375, 150, 200, 2525);
-            ctx.fillStyle = "rgba(0,0,0,0.1)" //shadows
+            ctx.fillStyle = "rgba(0,0,0,1)" //shadows
             ctx.fillRect(-250, -1550, 1250, 1575);
             ctx.fillRect(2537, -350, 275, 2425);
             ctx.fillStyle = "rgba(0,0,0,0.05)" //exit
@@ -9522,7 +9522,7 @@ const level = {
         };
 
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(710, -2225, 580, 225)
             ctx.fillRect(3510, -1550, 330, 300)
             ctx.fillRect(1735, -900, 1515, 1900)
@@ -9674,7 +9674,7 @@ const level = {
                 level.enter.draw();
             };
             level.customTopLayer = () => {
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-710 - 580, -2225, 580, 225)
                 ctx.fillRect(-3510 - 330, -1550, 330, 300)
                 ctx.fillRect(-1735 - 1515, -900, 1515, 1900)
@@ -9724,13 +9724,13 @@ const level = {
         };
         level.customTopLayer = () => {
             if (backwards) {
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(3750, -3650, 550, 400)
             } else {
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-275, -1275, 425, 300)
             }
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(3700, -3150, 1100, 950)
             ctx.fillRect(2000, -1110, 450, 1550)
 
@@ -9910,13 +9910,13 @@ const level = {
             };
             level.customTopLayer = () => {
                 if (backwards) {
-                    ctx.fillStyle = "rgba(0,0,0,0.1)"
+                    ctx.fillStyle = "rgba(0,0,0,1)"
                     ctx.fillRect(-3750 - 550, -3650, 550, 400)
                 } else {
-                    ctx.fillStyle = "rgba(0,0,0,0.1)"
+                    ctx.fillStyle = "rgba(0,0,0,1)"
                     ctx.fillRect(275 - 425, -1275, 425, 300)
                 }
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-3700 - 1100, -3150, 1100, 950)
                 ctx.fillRect(-2000 - 450, -1110, 450, 1550)
                 ctx.fillStyle = "rgba(0,0,0,0.04)"
@@ -9950,14 +9950,14 @@ const level = {
             level.enter.draw();
         };
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(2500, -1100, 450, 250)
             ctx.fillRect(2400, -550, 600, 150)
             ctx.fillRect(2550, -1650, 250, 200)
             ctx.fillStyle = "rgba(0,0,0,0.2)"
             ctx.fillRect(700, -110, 400, 110)
             ctx.fillRect(3800, -110, 400, 110)
-            ctx.fillStyle = "rgba(0,0,0,0.15)"
+            ctx.fillStyle = "rgba(0,0,0,15)"
             ctx.fillRect(-250, -300, 450, 300)
         };
         level.setPosToSpawn(-50, -60); //normal spawn
@@ -10061,14 +10061,14 @@ const level = {
                 level.enter.draw();
             };
             level.customTopLayer = () => {
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-2500 - 450, -1100, 450, 250)
                 ctx.fillRect(-2400 - 600, -550, 600, 150)
                 ctx.fillRect(-2550 - 250, -1650, 250, 200)
                 ctx.fillStyle = "rgba(0,0,0,0.2)"
                 ctx.fillRect(-700 - 400, -110, 400, 110)
                 ctx.fillRect(-3800 - 400, -110, 400, 110)
-                ctx.fillStyle = "rgba(0,0,0,0.15)"
+                ctx.fillStyle = "rgba(0,0,0,15)"
                 ctx.fillRect(250 - 450, -300, 450, 300)
             };
         }
@@ -10146,7 +10146,7 @@ const level = {
 
             ctx.fillStyle = "rgba(64,64,64,0.97)" //hidden section
             ctx.fillRect(-4450, -750, 800, 200)
-            ctx.fillStyle = "rgba(0,0,0,0.12)"
+            ctx.fillStyle = "rgba(0,0,0,12)"
             ctx.fillRect(-2500, -1975, 150, 300);
             ctx.fillRect(-1830, -1150, 2030, 1150)
             ctx.fillRect(-3410, -2150, 495, 1550)
@@ -10349,7 +10349,7 @@ const level = {
 
                 ctx.fillStyle = "rgba(64,64,64,0.97)" //hidden section
                 ctx.fillRect(4450 - 800, -750, 800, 200)
-                ctx.fillStyle = "rgba(0,0,0,0.12)"
+                ctx.fillStyle = "rgba(0,0,0,12)"
                 ctx.fillRect(2500 - 150, -1975, 150, 300);
                 ctx.fillRect(1830 - 2030, -1150, 2030, 1150)
                 ctx.fillRect(3410 - 495, -2150, 495, 1550)
@@ -10412,7 +10412,7 @@ const level = {
         lightingPath.lineTo(-1800, -500) //top left end/start of path
 
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.15)"; //shadows and lights
+            ctx.fillStyle = "rgba(0,0,0,15)"; //shadows and lights
             ctx.fill(lightingPath);
         };
 
@@ -10633,7 +10633,7 @@ const level = {
                 };
             }
             level.customTopLayer = () => {
-                ctx.fillStyle = "rgba(0,0,0,0.15)"; //shadows and lights
+                ctx.fillStyle = "rgba(0,0,0,15)"; //shadows and lights
                 ctx.beginPath()
                 ctx.moveTo(1800, -500)
                 ctx.lineTo(910, -500) //3rd floor light
@@ -10712,7 +10712,7 @@ const level = {
             level.enter.draw();
         };
         level.customTopLayer = () => {
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(3650, -1300, 1300, 1300)
             ctx.fillRect(3000, -1000, 650, 1000)
             ctx.fillRect(750, -1950, 800, 450)
@@ -10855,7 +10855,7 @@ const level = {
                 level.enter.draw();
             };
             level.customTopLayer = () => {
-                ctx.fillStyle = "rgba(0,0,0,0.1)"
+                ctx.fillStyle = "rgba(0,0,0,1)"
                 ctx.fillRect(-3650 - 1300, -1300, 1300, 1300)
                 ctx.fillRect(-3000 - 650, -1000, 650, 1000)
                 ctx.fillRect(-750 - 800, -1950, 800, 450)
@@ -10879,7 +10879,7 @@ const level = {
             boost3.query();
             ctx.fillStyle = "#edf9f9";
             ctx.fillRect(-500, -1220, 550, -480);
-            ctx.fillStyle = "rgba(0,0,0,0.1)";
+            ctx.fillStyle = "rgba(0,0,0,1)";
             ctx.fillRect(0, -700, 1050, 700);
             ctx.fillRect(-550, -1170, 550, 1170);
             ctx.fillRect(1150, -1700, 250, 1700);
@@ -11330,7 +11330,7 @@ const level = {
     //     level.defaultZoom = 1400;
     //     simulation.zoomTransition(level.defaultZoom)
     //     document.body.style.backgroundColor = "#d5d5d5";
-    //     const BGColor = "rgba(0,0,0,0.1)";
+    //     const BGColor = "rgba(0,0,0,1)";
     //     // level.fill.push({
     //     //     x: -150,
     //     //     y: -250,
@@ -12161,7 +12161,7 @@ const level = {
             ctx.fillStyle = "rgba(0,0,0,0.03)";
             ctx.fillRect(-875, -250, 1500, 700);
             ctx.fillRect(-925, -505, 930, 255);
-            ctx.fillStyle = "rgba(0,0,0,0.1)";
+            ctx.fillStyle = "rgba(0,0,0,1)";
             ctx.fillRect(725, -1400, 200, 200);
             ctx.fillRect(925, -2150, 150, 2175);
             ctx.fillRect(925, -3400, 150, 850);
@@ -19599,7 +19599,7 @@ const level = {
             ctx.fillRect(2130, -1182, 167, 800)
             ctx.fillRect(1892, -2073, 238, 1593)
             ctx.fillRect(2297, -2073, 238, 1593)
-            ctx.fillStyle = "rgba(0,0,0,0.15)"
+            ctx.fillStyle = "rgba(0,0,0,15)"
             ctx.fillRect(483, -1277, 350, 700)
             ctx.fillRect(833, -1000, 325, 450)
             ctx.fillStyle = "rgba(64,64,64,0.97)" //hidden section
@@ -22095,7 +22095,7 @@ const level = {
             portal[0].draw();
             portal[1].draw();
             mover.draw();
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(-150, -650, 900, 250)
         };
         level.setPosToSpawn(0, -450); //normal spawn
@@ -25235,7 +25235,7 @@ const level = {
                 ctx.moveTo(path[0].x, path[0].y);
                 ctx.lineTo(path[1].x, path[1].y);
                 if (charge > 50) {
-                    ctx.strokeStyle = "rgba(0,0,0,0.10)"
+                    ctx.strokeStyle = "rgba(0,0,0,10)"
                     ctx.lineWidth = 70
                     ctx.stroke();
                 }
@@ -28360,7 +28360,7 @@ const level = {
                 ctx.moveTo(path[0].x, path[0].y);
                 ctx.lineTo(path[1].x, path[1].y);
                 if (charge > 50) {
-                    ctx.strokeStyle = "rgba(0,0,0,0.10)"
+                    ctx.strokeStyle = "rgba(0,0,0,10)"
                     ctx.lineWidth = 70
                     ctx.stroke();
                 }
@@ -30706,7 +30706,7 @@ const level = {
                     ctx.beginPath(); //draw beam
                     ctx.moveTo(where.x, where.y);
                     ctx.lineTo(best.x, best.y);
-                    ctx.strokeStyle = "rgba(0,0,0,0.1)"; // 0 path
+                    ctx.strokeStyle = "rgba(0,0,0,1)"; // 0 path
                     ctx.lineWidth = 15;
                     ctx.stroke();
                     ctx.strokeStyle = "rgba(0,0,0,0.5)"; // 0 path
@@ -30861,7 +30861,7 @@ const level = {
                     ctx.beginPath(); //draw beam
                     ctx.moveTo(where.x, where.y);
                     ctx.lineTo(best.x, best.y);
-                    ctx.strokeStyle = "rgba(0,0,0,0.1)"; // 0 path
+                    ctx.strokeStyle = "rgba(0,0,0,1)"; // 0 path
                     ctx.lineWidth = 15;
                     ctx.stroke();
                     ctx.strokeStyle = "rgba(0,0,0,0.5)"; // 0 path
@@ -31214,7 +31214,7 @@ const level = {
                     ctx.beginPath(); //draw beam
                     ctx.moveTo(where.x, where.y);
                     ctx.lineTo(best.x, best.y);
-                    ctx.strokeStyle = "rgba(0,0,0,0.1)"; // Black path
+                    ctx.strokeStyle = "rgba(0,0,0,1)"; // Black path
                     ctx.lineWidth = 25;
                     ctx.stroke();
                     ctx.strokeStyle = "rgba(0,0,0,0.5)"; // Black path
@@ -31241,7 +31241,7 @@ const level = {
 
                         ctx.beginPath();
                         ctx.arc(m.pos.x, m.pos.y, 40, 0, 2 * Math.PI);
-                        ctx.fillStyle = "rgba(0,0,0,0.15)";
+                        ctx.fillStyle = "rgba(0,0,0,15)";
                         ctx.fill();
                     }
                     ctx.beginPath();
@@ -31978,7 +31978,7 @@ const level = {
                     ctx.beginPath(); //draw beam
                     ctx.moveTo(where.x, where.y);
                     ctx.lineTo(best.x, best.y);
-                    ctx.strokeStyle = "rgba(0,0,0,0.1)"; // 0 path
+                    ctx.strokeStyle = "rgba(0,0,0,1)"; // 0 path
                     ctx.lineWidth = 15;
                     ctx.stroke();
                     ctx.strokeStyle = "rgba(0,0,0,0.5)"; // 0 path
@@ -32133,7 +32133,7 @@ const level = {
                     ctx.beginPath(); //draw beam
                     ctx.moveTo(where.x, where.y);
                     ctx.lineTo(best.x, best.y);
-                    ctx.strokeStyle = "rgba(0,0,0,0.1)"; // 0 path
+                    ctx.strokeStyle = "rgba(0,0,0,1)"; // 0 path
                     ctx.lineWidth = 15;
                     ctx.stroke();
                     ctx.strokeStyle = "rgba(0,0,0,0.5)"; // 0 path
@@ -32486,7 +32486,7 @@ const level = {
                     ctx.beginPath(); //draw beam
                     ctx.moveTo(where.x, where.y);
                     ctx.lineTo(best.x, best.y);
-                    ctx.strokeStyle = "rgba(0,0,0,0.1)"; // Black path
+                    ctx.strokeStyle = "rgba(0,0,0,1)"; // Black path
                     ctx.lineWidth = 25;
                     ctx.stroke();
                     ctx.strokeStyle = "rgba(0,0,0,0.5)"; // Black path
@@ -32513,7 +32513,7 @@ const level = {
 
                         ctx.beginPath();
                         ctx.arc(m.pos.x, m.pos.y, 40, 0, 2 * Math.PI);
-                        ctx.fillStyle = "rgba(0,0,0,0.15)";
+                        ctx.fillStyle = "rgba(0,0,0,15)";
                         ctx.fill();
                     }
                     ctx.beginPath();
@@ -32986,7 +32986,7 @@ const level = {
             ctx.fillRect(10000, 510, 50, 700)
 
             //general background shadows
-            ctx.fillStyle = "rgba(0,0,0,0.1)"
+            ctx.fillStyle = "rgba(0,0,0,1)"
             ctx.fillRect(9500, -800, 5000, 3100)
             ctx.fillRect(10000, 2300, 5000, 700)
             ctx.moveTo(10000, 2300)
