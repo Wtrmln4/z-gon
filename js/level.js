@@ -9708,10 +9708,10 @@ const level = {
             boost1.query();
             boost2.query();
             if (backwards) {
-                ctx.fillStyle = "#d4f4f4"
+                ctx.fillStyle = "#181a2e"
                 ctx.fillRect(-275, -1275, 425, 300)
             } else {
-                ctx.fillStyle = "#d4f4f4"
+                ctx.fillStyle = "#181a2e"
                 ctx.fillRect(3750, -3650, 550, 400)
             }
             ctx.fillStyle = "#c7c7ca"
